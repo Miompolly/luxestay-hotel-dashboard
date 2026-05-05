@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0B0E11;
+  --color-card: #1E2329;
+  --color-border: #2B3139;
+  --color-primary: #FCD535;
+  --color-text-primary: #EAECEF;
+  --color-text-secondary: #848E9C;
+  --color-success: #0ECB81;
+  --color-danger: #F6465D;
+
+  --radius-2xl: 1rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary font-sans antialiased;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
